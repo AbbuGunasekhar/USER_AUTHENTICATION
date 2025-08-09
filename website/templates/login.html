@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+   {%  block title %}
+      Login
+    {% endblock %}
+
+    {% block content%}
+
+<!-- {% if boolean==19 %}
+<p>This is true</p>
+{% elif boolean ==2 %}
+<p>This is False</p>
+{% else %}
+<p>This is else part</p>
+{%endif%} -->
+
+<h1 align="center">Login</h1>
+   <form method="POST">
+    <div class="form-group" align="center">
+        <table>
+           
+             <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="text" name="email" id="email" placeholder="Enter Your Email"></td>
+            </tr>
+
+             <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="text" name="password" id="password" placeholder="Enter Password"></td>
+            </tr>
+
+           
+             <tr>
+                <td colspan="2" align="center"><button type="submit">Login</button></td>
+            </tr>
+        </table>
+    </div>
+   </form>
+    {% endblock %}
